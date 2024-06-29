@@ -1,6 +1,15 @@
-<p>"<%= @question %>"</p>
-<p>You</p>
-<p>"<%= @answer %>"</p>
-<p>Your coach</p>
+
+<h1>Stupid Coaching</h1>
+
+<div class="d-flex flex-column">
+  <div class="justify-content-end">
+    <p class="col-6 msg right"><%= @question %></p>
+    <p>You</p>
+  </div>
+  <div class="justify-content-end">
+    <p class="col-6 msg left"><%= @answer %></p>
+    <p>Your coach</p>
+  </div>
+</div>
 
 <%= link_to "Ask me something else", ask_path %>
